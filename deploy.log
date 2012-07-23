@@ -1,0 +1,1064 @@
+Apache Maven 3.0.4 (r1232337; 2012-01-17 11:44:56+0300)
+Maven home: /opt/maven
+Java version: 1.7.0_03, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: ru_RU, platform encoding: UTF-8
+OS name: "linux", version: "3.2.0-26-generic-pae", arch: "i386", family: "unix"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /opt/maven/conf/settings.xml
+[DEBUG] Reading user settings from /home/minsler/.m2/settings.xml
+[DEBUG] Using local repository at /home/minsler/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for /home/minsler/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project by.minsler:skarnik:war:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging war from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix tomcat from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Could not find metadata org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/maven-metadata.xml
+827/827 B               Downloaded: http://people.apache.org/repo/m2-snapshot-repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/maven-metadata.xml (827 B at 0.5 KB/sec)
+[DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/tomcat-maven-plugin-2.0-20111106.141804-23.pom
+2/24 KB     3/24 KB   4/24 KB   6/24 KB   7/24 KB   9/24 KB   10/24 KB   11/24 KB   13/24 KB   14/24 KB   15/24 KB   17/24 KB   18/24 KB   19/24 KB   20/24 KB   22/24 KB   23/24 KB   24/24 KB              Downloaded: http://people.apache.org/repo/m2-snapshot-repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/tomcat-maven-plugin-2.0-20111106.141804-23.pom (24 KB at 21.7 KB/sec)
+[DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/tomcat-maven-plugin-2.0-20111106.141804-23.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/_maven.repositories
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/tomcat-maven-plugin-2.0-SNAPSHOT.jar
+           [DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/apache/tomcat/maven/tomcat-maven-plugin/2.0-SNAPSHOT/tomcat-maven-plugin-2.0-SNAPSHOT.jar.lastUpdated
+[WARNING] Failed to retrieve plugin descriptor for org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT: Plugin org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT or one of its dependencies could not be resolved: Could not find artifact org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT or one of its dependencies could not be resolved: Could not find artifact org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:140)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:142)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.loadPlugin(DefaultBuildPluginManager.java:59)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolveFromProject(DefaultPluginPrefixResolver.java:139)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolveFromProject(DefaultPluginPrefixResolver.java:122)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolve(DefaultPluginPrefixResolver.java:86)
+	at org.apache.maven.lifecycle.internal.MojoDescriptorCreator.findPluginForPrefix(MojoDescriptorCreator.java:262)
+	at org.apache.maven.lifecycle.internal.MojoDescriptorCreator.getMojoDescriptor(MojoDescriptorCreator.java:222)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleTaskSegmentCalculator.calculateTaskSegments(DefaultLifecycleTaskSegmentCalculator.java:106)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleTaskSegmentCalculator.calculateTaskSegments(DefaultLifecycleTaskSegmentCalculator.java:86)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:98)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.sonatype.aether.resolution.ArtifactResolutionException: Could not find artifact org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:538)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:193)
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:286)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:136)
+	... 23 more
+Caused by: org.sonatype.aether.transfer.ArtifactNotFoundException: Could not find artifact org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$4.wrap(WagonRepositoryConnector.java:947)
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$4.wrap(WagonRepositoryConnector.java:941)
+	at org.sonatype.aether.connector.wagon.WagonRepositoryConnector$GetTask.run(WagonRepositoryConnector.java:669)
+	at org.sonatype.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:60)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[DEBUG] Could not find metadata org.apache.maven.plugins/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.apache.maven.plugins/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Could not find metadata org.codehaus.mojo/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/codehaus/mojo/maven-metadata.xml
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/apache/maven/plugins/maven-metadata.xml
+           [DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/codehaus/mojo/resolver-status.properties
+           [DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/apache/maven/plugins/resolver-status.properties
+[DEBUG] Could not find metadata org.apache.maven.plugins/maven-metadata.xml in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+[DEBUG] Could not find metadata org.codehaus.mojo/maven-metadata.xml in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+[DEBUG] Resolved plugin prefix tomcat to org.codehaus.mojo:tomcat-maven-plugin from repository central
+[DEBUG] Resolving plugin version for org.codehaus.mojo:tomcat-maven-plugin
+[DEBUG] Could not find metadata org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://people.apache.org/repo/m2-snapshot-repository
+Downloading: http://people.apache.org/repo/m2-snapshot-repository/org/codehaus/mojo/tomcat-maven-plugin/maven-metadata.xml
+           [DEBUG] Writing resolution tracking file /home/minsler/.m2/repository/org/codehaus/mojo/tomcat-maven-plugin/resolver-status.properties
+[DEBUG] Could not find metadata org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository)
+[DEBUG] Resolved plugin version for org.codehaus.mojo:tomcat-maven-plugin to 1.1 from repository central (http://repo.maven.apache.org/maven2, releases)
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: by.minsler:skarnik:war:1.0-SNAPSHOT
+[DEBUG] Tasks:   [tomcat:deploy]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building skarnik Maven Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin prefix tomcat from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Skipped remote update check for org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT, already updated during this session.
+[WARNING] Failed to retrieve plugin descriptor for org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT: Plugin org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT or one of its dependencies could not be resolved: Failure to find org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.tomcat.maven:tomcat-maven-plugin:2.0-SNAPSHOT or one of its dependencies could not be resolved: Failure to find org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:140)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:142)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.loadPlugin(DefaultBuildPluginManager.java:59)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolveFromProject(DefaultPluginPrefixResolver.java:139)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolveFromProject(DefaultPluginPrefixResolver.java:122)
+	at org.apache.maven.plugin.prefix.internal.DefaultPluginPrefixResolver.resolve(DefaultPluginPrefixResolver.java:86)
+	at org.apache.maven.lifecycle.internal.MojoDescriptorCreator.findPluginForPrefix(MojoDescriptorCreator.java:262)
+	at org.apache.maven.lifecycle.internal.MojoDescriptorCreator.getMojoDescriptor(MojoDescriptorCreator.java:222)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateMojoExecutions(DefaultLifecycleExecutionPlanCalculator.java:182)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateExecutionPlan(DefaultLifecycleExecutionPlanCalculator.java:112)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateExecutionPlan(DefaultLifecycleExecutionPlanCalculator.java:129)
+	at org.apache.maven.lifecycle.internal.BuilderCommon.resolveBuildPlan(BuilderCommon.java:92)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.sonatype.aether.resolution.ArtifactResolutionException: Failure to find org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:538)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:193)
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:286)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:136)
+	... 28 more
+Caused by: org.sonatype.aether.transfer.ArtifactNotFoundException: Failure to find org.apache.tomcat.maven:tomcat-maven-plugin:jar:2.0-SNAPSHOT in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:230)
+	at org.sonatype.aether.impl.internal.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:176)
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:427)
+	... 32 more
+[DEBUG] Could not find metadata org.apache.maven.plugins/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.apache.maven.plugins/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find org.apache.maven.plugins/maven-metadata.xml in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote update check for org.apache.maven.plugins/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Could not find metadata org.codehaus.mojo/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find org.codehaus.mojo/maven-metadata.xml in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote update check for org.codehaus.mojo/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin prefix tomcat to org.codehaus.mojo:tomcat-maven-plugin from repository central
+[DEBUG] Resolving plugin version for org.codehaus.mojo:tomcat-maven-plugin
+[DEBUG] Could not find metadata org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in local (/home/minsler/.m2/repository)
+[DEBUG] Skipped remote update check for org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml in http://people.apache.org/repo/m2-snapshot-repository was cached in the local repository, resolution will not be reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[DEBUG] Skipped remote update check for org.codehaus.mojo:tomcat-maven-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.codehaus.mojo:tomcat-maven-plugin to 1.1 from repository central (http://repo.maven.apache.org/maven2, releases)
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       by.minsler:skarnik:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): []
+[DEBUG] Repositories (dependencies): [people.apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository, snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] --- init fork of by.minsler:skarnik:1.0-SNAPSHOT for org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <source default-value="1.5">1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.6</target>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources>${project.testResources}</resources>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <source default-value="1.5">1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.6</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.10:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository>${localRepository}</localRepository>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories>${project.pluginArtifactRepositories}</remoteRepositories>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <session>${session}</session>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-war-plugin:2.1.1:war (default-war)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archiveClasses default-value="false">${archiveClasses}</archiveClasses>
+  <attachClasses default-value="false"/>
+  <cacheFile default-value="${project.build.directory}/war/work/webapp-cache.xml"/>
+  <classesClassifier default-value="classes"/>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <containerConfigXML>${maven.war.containerConfigXML}</containerConfigXML>
+  <escapeString>${maven.war.escapeString}</escapeString>
+  <escapedBackslashesInFilePath default-value="false">${maven.war.escapedBackslashesInFilePath}</escapedBackslashesInFilePath>
+  <failOnMissingWebXml default-value="true">${failOnMissingWebXml}</failOnMissingWebXml>
+  <filteringDeploymentDescriptors default-value="false">${maven.war.filteringDeploymentDescriptors}</filteringDeploymentDescriptors>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <primaryArtifact default-value="true">${primaryArtifact}</primaryArtifact>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <useCache default-value="false">${useCache}</useCache>
+  <warName default-value="${project.build.finalName}"/>
+  <warSourceDirectory default-value="${basedir}/src/main/webapp"/>
+  <warSourceIncludes default-value="**"/>
+  <webXml>${maven.war.webxml}</webXml>
+  <webappDirectory default-value="${project.build.directory}/${project.build.finalName}"/>
+  <workDirectory default-value="${project.build.directory}/war/work"/>
+</configuration>
+[DEBUG] --- exit fork of by.minsler:skarnik:1.0-SNAPSHOT for org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <charset default-value="ISO-8859-1">${maven.tomcat.charset}</charset>
+  <contextFile>${project.build.directory}/${project.build.finalName}/META-INF/context.xml</contextFile>
+  <ignorePackaging default-value="false">${tomcat.ignorePackaging}</ignorePackaging>
+  <mode default-value="war">${maven.tomcat.mode}</mode>
+  <packaging>${project.packaging}</packaging>
+  <password>${tomcat.password}</password>
+  <path default-value="/${project.artifactId}">${maven.tomcat.path}</path>
+  <server>${maven.tomcat.server}</server>
+  <tag>${maven.tomcat.tag}</tag>
+  <update default-value="false">${maven.tomcat.update}</update>
+  <url default-value="http://localhost:8080/manager">${maven.tomcat.url}</url>
+  <username>${tomcat.username}</username>
+  <version>${plugin.version}</version>
+  <warFile>${project.build.directory}/${project.build.finalName}.war</warFile>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> tomcat-maven-plugin:1.1:deploy (default-cli) @ skarnik >>>
+[DEBUG] by.minsler:skarnik:war:1.0-SNAPSHOT
+[DEBUG]    junit:junit:jar:3.8.1:test
+[DEBUG]    postgresql:postgresql:jar:9.1-901-1.jdbc4:compile
+[DEBUG]    log4j:log4j:jar:1.2.17:compile
+[DEBUG]    javax.servlet:javax.servlet-api:jar:3.0.1:compile
+[DEBUG]    javax.servlet:jstl:jar:1.2:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ skarnik ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.0:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.5:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[debug] execute contextualize
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.5:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/minsler/maven_projects/skarnik/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: by.minsler:skarnik:1.0-SNAPSHOT @ /home/minsler/maven_projects/skarnik/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/minsler/maven_projects/skarnik/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SESSION_MANAGER=local/zg5:@/tmp/.ICE-unix/12292,unix/zg5:/tmp/.ICE-unix/12292, env.LESSOPEN=| /usr/bin/lesspipe %s, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/classes, env.PWD=/home/minsler/maven_projects/skarnik, env.XDG_SESSION_COOKIE=5ccd7585e5d2978f47fc6f390000000e-1342980275.931466-1486563037, sun.desktop=gnome, env.LANG=ru_RU.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_03-b04, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu-2d.default.path, env.DISPLAY=:0, user.name=minsler, env._=/opt/maven/bin/mvn, maven.build.version=Apache Maven 3.0.4 (r1232337; 2012-01-17 11:44:56+0300), env.USER=minsler, env.SHELL=/bin/bash, env.DESKTOP_SESSION=ubuntu-2d, env.XDG_DATA_DIRS=/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/opt/maven/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/bin, env.XDG_CURRENT_DESKTOP=Unity, user.language=ru, sun.boot.library.path=/usr/lib/jvm/java-7-oracle/jre/lib/i386, classworlds.conf=/opt/maven/bin/m2.conf, java.version=1.7.0_03, user.timezone=Europe/Minsk, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HupQhQSGPR,guid=3f0c82f881fa79751fcb5b9000003f4f, sun.arch.data.model=32, env.SSH_AGENT_PID=12327, java.endorsed.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.CATALINA_OPTS=-DJENKINS_HOME=/home/minsler/java/apache-tomcat-7.0.29/webapps -Xmx512m, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, java.class.version=51.0, env.GDMSESSION=ubuntu-2d, user.country=RU, env.GNOME_KEYRING_PID=12281, java.home=/usr/lib/jvm/java-7-oracle/jre, java.vm.info=mixed mode, env.LOGNAME=minsler, os.version=3.2.0-26-generic-pae, path.separator=:, java.vm.version=22.1-b02, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session3, env.JAVA_HOME=/usr/lib/jvm/java-7-oracle, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/minsler, env.OLDPWD=/home/minsler/java/apache-tomcat-7.0.29/webapps, java.specification.vendor=Oracle Corporation, env.M2_HOME=/opt/maven, env.WINDOWID=60817413, java.library.path=/usr/java/packages/lib/i386:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, java.vm.vendor=Oracle Corporation, maven.home=/opt/maven, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X tomcat:deploy, java.class.path=/opt/maven/boot/plexus-classworlds-2.4.jar, maven.version=3.0.4, env.UBUNTU_MENUPROXY=libappmenu.so, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/home/minsler, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/keyring-ew5n7e/ssh, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext, env.XAUTHORITY=/home/minsler/.Xauthority, user.dir=/home/minsler/maven_projects/skarnik, env.MANDATORY_PATH=/usr/share/gconf/ubuntu-2d.mandatory.path, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, env.COLORTERM=gnome-terminal, file.encoding=UTF-8, env.GPG_AGENT_INFO=/tmp/keyring-ew5n7e/gpg:0:1, java.specification.version=1.7, env.GNOME_KEYRING_CONTROL=/tmp/keyring-ew5n7e, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu-2d:/etc/xdg, env.LESSCLOSE=/usr/bin/lesspipe %s %s}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/minsler/maven_projects/skarnik/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ skarnik ---
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:2.3.2:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:1.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:2.3.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:1.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/minsler/maven_projects/skarnik
+[DEBUG]   (f) buildDirectory = /home/minsler/maven_projects/skarnik/target
+[DEBUG]   (f) classpathElements = [/home/minsler/maven_projects/skarnik/target/classes, /home/minsler/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar, /home/minsler/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, /home/minsler/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /home/minsler/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/minsler/maven_projects/skarnik/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/minsler/maven_projects/skarnik/target/generated-sources/annotations
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/minsler/maven_projects/skarnik/target/classes
+[DEBUG]   (f) outputFileName = skarnik
+[DEBUG]   (f) projectArtifact = by.minsler:skarnik:war:1.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/home/minsler/maven_projects/skarnik/src/main/java]
+[DEBUG] Classpath: [/home/minsler/maven_projects/skarnik/target/classes
+ /home/minsler/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar
+ /home/minsler/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+ /home/minsler/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+ /home/minsler/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar]
+[DEBUG] Output directory: /home/minsler/maven_projects/skarnik/target/classes
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ skarnik ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.5:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[debug] execute contextualize
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.5:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/minsler/maven_projects/skarnik/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: by.minsler:skarnik:1.0-SNAPSHOT @ /home/minsler/maven_projects/skarnik/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/minsler/maven_projects/skarnik/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SESSION_MANAGER=local/zg5:@/tmp/.ICE-unix/12292,unix/zg5:/tmp/.ICE-unix/12292, env.LESSOPEN=| /usr/bin/lesspipe %s, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/classes, env.PWD=/home/minsler/maven_projects/skarnik, env.XDG_SESSION_COOKIE=5ccd7585e5d2978f47fc6f390000000e-1342980275.931466-1486563037, sun.desktop=gnome, env.LANG=ru_RU.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_03-b04, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu-2d.default.path, env.DISPLAY=:0, user.name=minsler, env._=/opt/maven/bin/mvn, maven.build.version=Apache Maven 3.0.4 (r1232337; 2012-01-17 11:44:56+0300), env.USER=minsler, env.SHELL=/bin/bash, env.DESKTOP_SESSION=ubuntu-2d, env.XDG_DATA_DIRS=/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/opt/maven/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/bin, env.XDG_CURRENT_DESKTOP=Unity, user.language=ru, sun.boot.library.path=/usr/lib/jvm/java-7-oracle/jre/lib/i386, classworlds.conf=/opt/maven/bin/m2.conf, java.version=1.7.0_03, user.timezone=Europe/Minsk, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HupQhQSGPR,guid=3f0c82f881fa79751fcb5b9000003f4f, sun.arch.data.model=32, env.SSH_AGENT_PID=12327, java.endorsed.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.CATALINA_OPTS=-DJENKINS_HOME=/home/minsler/java/apache-tomcat-7.0.29/webapps -Xmx512m, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, java.class.version=51.0, env.GDMSESSION=ubuntu-2d, user.country=RU, env.GNOME_KEYRING_PID=12281, java.home=/usr/lib/jvm/java-7-oracle/jre, java.vm.info=mixed mode, env.LOGNAME=minsler, os.version=3.2.0-26-generic-pae, path.separator=:, java.vm.version=22.1-b02, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session3, env.JAVA_HOME=/usr/lib/jvm/java-7-oracle, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/minsler, env.OLDPWD=/home/minsler/java/apache-tomcat-7.0.29/webapps, java.specification.vendor=Oracle Corporation, env.M2_HOME=/opt/maven, env.WINDOWID=60817413, java.library.path=/usr/java/packages/lib/i386:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, java.vm.vendor=Oracle Corporation, maven.home=/opt/maven, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X tomcat:deploy, java.class.path=/opt/maven/boot/plexus-classworlds-2.4.jar, maven.version=3.0.4, env.UBUNTU_MENUPROXY=libappmenu.so, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/home/minsler, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/keyring-ew5n7e/ssh, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext, env.XAUTHORITY=/home/minsler/.Xauthority, user.dir=/home/minsler/maven_projects/skarnik, env.MANDATORY_PATH=/usr/share/gconf/ubuntu-2d.mandatory.path, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, env.COLORTERM=gnome-terminal, file.encoding=UTF-8, env.GPG_AGENT_INFO=/tmp/keyring-ew5n7e/gpg:0:1, java.specification.version=1.7, env.GNOME_KEYRING_CONTROL=/tmp/keyring-ew5n7e, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu-2d:/etc/xdg, env.LESSCLOSE=/usr/bin/lesspipe %s %s}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/minsler/maven_projects/skarnik/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/minsler/maven_projects/skarnik/src/test/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ skarnik ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:2.3.2, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/minsler/maven_projects/skarnik
+[DEBUG]   (f) buildDirectory = /home/minsler/maven_projects/skarnik/target
+[DEBUG]   (f) classpathElements = [/home/minsler/maven_projects/skarnik/target/test-classes, /home/minsler/maven_projects/skarnik/target/classes, /home/minsler/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar, /home/minsler/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar, /home/minsler/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, /home/minsler/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar, /home/minsler/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/minsler/maven_projects/skarnik/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/minsler/maven_projects/skarnik/target/generated-sources/test-annotations
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/minsler/maven_projects/skarnik/target/test-classes
+[DEBUG]   (f) outputFileName = skarnik
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ skarnik ---
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.10:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.10:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.10:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.10:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test (scope managed from compile)
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.10
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.10
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: junit:junit:jar:3.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.0.9
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.10:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.10, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.10:test' with basic configurator -->
+[DEBUG]   (s) basedir = /home/minsler/maven_projects/skarnik
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /home/minsler/maven_projects/skarnik/target/classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =        id: local
+      url: file:///home/minsler/.m2/repository/
+   layout: none
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.10:, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.10:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.10:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.10:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:2.1:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile}
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) project = MavenProject: by.minsler:skarnik:1.0-SNAPSHOT @ /home/minsler/maven_projects/skarnik/pom.xml
+[DEBUG]   (s) projectArtifactMap = {junit:junit=junit:junit:jar:3.8.1:test, postgresql:postgresql=postgresql:postgresql:jar:9.1-901-1.jdbc4:compile, log4j:log4j=log4j:log4j:jar:1.2.17:compile, javax.servlet:javax.servlet-api=javax.servlet:javax.servlet-api:jar:3.0.1:compile, javax.servlet:jstl=javax.servlet:jstl:jar:1.2:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [       id: apache.snapshots
+      url: http://people.apache.org/repo/m2-snapshot-repository
+   layout: default
+snapshots: [enabled => true, update => daily]
+ releases: [enabled => false, update => daily]
+,        id: central
+      url: http://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /home/minsler/maven_projects/skarnik/target/surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = /home/minsler/maven_projects/skarnik/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /home/minsler/maven_projects/skarnik/src/test/java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /home/minsler/maven_projects/skarnik
+[DEBUG] -- end configuration --
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/minsler/maven_projects/skarnik/target/surefire-reports
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-booter:jar:2.10:compile (selected for compile)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.10:compile (selected for compile)
+[DEBUG] Adding to surefire booter test classpath: /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-booter/2.10/surefire-booter-2.10.jar Scope: compile
+[DEBUG] Adding to surefire booter test classpath: /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar Scope: compile
+[DEBUG] Setting system property [user.dir]=[/home/minsler/maven_projects/skarnik]
+[DEBUG] Setting system property [localRepository]=[/home/minsler/.m2/repository]
+[DEBUG] Setting system property [basedir]=[/home/minsler/maven_projects/skarnik]
+[DEBUG] Using JVM: /usr/lib/jvm/java-7-oracle/jre/bin/java
+[DEBUG] dummy:dummy:jar:1.0 (selected for null)
+[DEBUG]   org.apache.maven.surefire:surefire-junit3:jar:2.10:test (selected for test)
+[DEBUG]     org.apache.maven.surefire:surefire-api:jar:2.10:test (selected for test)
+[DEBUG] Adding to surefire test classpath: /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.10/surefire-junit3-2.10.jar Scope: test
+[DEBUG] Adding to surefire test classpath: /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar Scope: test
+[DEBUG] test classpath classpath:
+[DEBUG]   /home/minsler/maven_projects/skarnik/target/test-classes
+[DEBUG]   /home/minsler/maven_projects/skarnik/target/classes
+[DEBUG]   /home/minsler/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+[DEBUG]   /home/minsler/.m2/repository/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar
+[DEBUG]   /home/minsler/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[DEBUG]   /home/minsler/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar
+[DEBUG]   /home/minsler/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar
+[DEBUG] provider classpath classpath:
+[DEBUG]   /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.10/surefire-junit3-2.10.jar
+[DEBUG]   /home/minsler/.m2/repository/org/apache/maven/surefire/surefire-api/2.10/surefire-api-2.10.jar
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Forking command line: /bin/sh -c cd /home/minsler/maven_projects/skarnik && /usr/lib/jvm/java-7-oracle/jre/bin/java -jar /home/minsler/maven_projects/skarnik/target/surefire/surefirebooter5666061842866565355.jar /home/minsler/maven_projects/skarnik/target/surefire/surefire2180698757898541763tmp /home/minsler/maven_projects/skarnik/target/surefire/surefire6749936756146521899tmp
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ skarnik ---
+[DEBUG] org.apache.maven.plugins:maven-war-plugin:jar:2.1.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.4.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:1.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:1.0.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    com.thoughtworks.xstream:xstream:jar:1.3.1:compile
+[DEBUG]       xpp3:xpp3_min:jar:1.1.4c:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.0-beta-2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.1.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.1.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.1.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-war-plugin:jar:2.1.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:1.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: com.thoughtworks.xstream:xstream:jar:1.3.1
+[DEBUG]   Included: xpp3:xpp3_min:jar:1.1.4c
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.0-beta-2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-war-plugin:2.1.1:war from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-war-plugin:2.1.1, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-war-plugin:2.1.1:war' with basic configurator -->
+[DEBUG]   (s) archiveClasses = false
+[DEBUG]   (s) attachClasses = false
+[DEBUG]   (s) cacheFile = /home/minsler/maven_projects/skarnik/target/war/work/webapp-cache.xml
+[DEBUG]   (s) classesClassifier = classes
+[DEBUG]   (s) classesDirectory = /home/minsler/maven_projects/skarnik/target/classes
+[DEBUG]   (f) escapedBackslashesInFilePath = false
+[DEBUG]   (s) failOnMissingWebXml = true
+[DEBUG]   (f) filteringDeploymentDescriptors = false
+[DEBUG]   (s) outputDirectory = /home/minsler/maven_projects/skarnik/target
+[DEBUG]   (s) primaryArtifact = true
+[DEBUG]   (s) project = MavenProject: by.minsler:skarnik:1.0-SNAPSHOT @ /home/minsler/maven_projects/skarnik/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1edefd2
+[DEBUG]   (s) useCache = false
+[DEBUG]   (s) warName = skarnik
+[DEBUG]   (s) warSourceDirectory = /home/minsler/maven_projects/skarnik/src/main/webapp
+[DEBUG]   (s) warSourceIncludes = **
+[DEBUG]   (s) webappDirectory = /home/minsler/maven_projects/skarnik/target/skarnik
+[DEBUG]   (s) workDirectory = /home/minsler/maven_projects/skarnik/target/war/work
+[DEBUG] -- end configuration --
+[INFO] Packaging webapp
+[INFO] Assembling webapp [skarnik] in [/home/minsler/maven_projects/skarnik/target/skarnik]
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SESSION_MANAGER=local/zg5:@/tmp/.ICE-unix/12292,unix/zg5:/tmp/.ICE-unix/12292, env.LESSOPEN=| /usr/bin/lesspipe %s, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/classes, env.PWD=/home/minsler/maven_projects/skarnik, env.XDG_SESSION_COOKIE=5ccd7585e5d2978f47fc6f390000000e-1342980275.931466-1486563037, sun.desktop=gnome, env.LANG=ru_RU.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_03-b04, env.DEFAULTS_PATH=/usr/share/gconf/ubuntu-2d.default.path, env.DISPLAY=:0, user.name=minsler, env._=/opt/maven/bin/mvn, maven.build.version=Apache Maven 3.0.4 (r1232337; 2012-01-17 11:44:56+0300), env.USER=minsler, env.SHELL=/bin/bash, env.DESKTOP_SESSION=ubuntu-2d, env.XDG_DATA_DIRS=/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/opt/maven/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/bin, env.XDG_CURRENT_DESKTOP=Unity, user.language=ru, sun.boot.library.path=/usr/lib/jvm/java-7-oracle/jre/lib/i386, classworlds.conf=/opt/maven/bin/m2.conf, java.version=1.7.0_03, user.timezone=Europe/Minsk, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-HupQhQSGPR,guid=3f0c82f881fa79751fcb5b9000003f4f, sun.arch.data.model=32, env.SSH_AGENT_PID=12327, java.endorsed.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.CATALINA_OPTS=-DJENKINS_HOME=/home/minsler/java/apache-tomcat-7.0.29/webapps -Xmx512m, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, env.GNOME_DESKTOP_SESSION_ID=this-is-deprecated, java.class.version=51.0, env.GDMSESSION=ubuntu-2d, user.country=RU, env.GNOME_KEYRING_PID=12281, java.home=/usr/lib/jvm/java-7-oracle/jre, java.vm.info=mixed mode, env.LOGNAME=minsler, os.version=3.2.0-26-generic-pae, path.separator=:, java.vm.version=22.1-b02, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session3, env.JAVA_HOME=/usr/lib/jvm/java-7-oracle, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/minsler, env.OLDPWD=/home/minsler/java/apache-tomcat-7.0.29/webapps, java.specification.vendor=Oracle Corporation, env.M2_HOME=/opt/maven, env.WINDOWID=60817413, java.library.path=/usr/java/packages/lib/i386:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, java.vm.vendor=Oracle Corporation, maven.home=/opt/maven, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X tomcat:deploy, java.class.path=/opt/maven/boot/plexus-classworlds-2.4.jar, maven.version=3.0.4, env.UBUNTU_MENUPROXY=libappmenu.so, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.os.patch.level=unknown, sun.cpu.endian=little, env.HOME=/home/minsler, java.io.tmpdir=/tmp, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/keyring-ew5n7e/ssh, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, os.arch=i386, java.ext.dirs=/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext, user.dir=/home/minsler/maven_projects/skarnik, env.XAUTHORITY=/home/minsler/.Xauthority, env.MANDATORY_PATH=/usr/share/gconf/ubuntu-2d.mandatory.path, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, env.COLORTERM=gnome-terminal, file.encoding=UTF-8, env.GPG_AGENT_INFO=/tmp/keyring-ew5n7e/gpg:0:1, java.specification.version=1.7, env.GNOME_KEYRING_CONTROL=/tmp/keyring-ew5n7e, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu-2d:/etc/xdg, env.LESSCLOSE=/usr/bin/lesspipe %s %s}
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/minsler/maven_projects/skarnik/src/main/webapp]
+[DEBUG]  + index.jsp has been copied.
+[DEBUG]  + WEB-INF/web.xml has been copied.
+[DEBUG] Dump of the current build pathSet content -->
+[DEBUG] index.jsp
+[DEBUG] WEB-INF/web.xml
+[DEBUG] -- end of dump --
+[DEBUG]  + WEB-INF/classes/NewServlet.class has been copied.
+[DEBUG] Processing: postgresql-9.1-901-1.jdbc4.jar
+[DEBUG]  + WEB-INF/lib/postgresql-9.1-901-1.jdbc4.jar has been copied.
+[DEBUG] Processing: log4j-1.2.17.jar
+[DEBUG]  + WEB-INF/lib/log4j-1.2.17.jar has been copied.
+[DEBUG] Processing: javax.servlet-api-3.0.1.jar
+[DEBUG]  + WEB-INF/lib/javax.servlet-api-3.0.1.jar has been copied.
+[DEBUG] Processing: jstl-1.2.jar
+[DEBUG]  + WEB-INF/lib/jstl-1.2.jar has been copied.
+[INFO] Webapp assembled in [236 msecs]
+[DEBUG] Excluding [] from the generated webapp archive.
+[DEBUG] Including [**] in the generated webapp archive.
+[INFO] Building war: /home/minsler/maven_projects/skarnik/target/skarnik.war
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory WEB-INF/
+[DEBUG] adding directory WEB-INF/classes/
+[DEBUG] adding directory WEB-INF/lib/
+[DEBUG] adding entry index.jsp
+[DEBUG] adding entry WEB-INF/classes/NewServlet.class
+[DEBUG] adding entry WEB-INF/web.xml
+[DEBUG] adding entry WEB-INF/lib/jstl-1.2.jar
+[DEBUG] adding entry WEB-INF/lib/postgresql-9.1-901-1.jdbc4.jar
+[DEBUG] adding entry WEB-INF/lib/javax.servlet-api-3.0.1.jar
+[DEBUG] adding entry WEB-INF/lib/log4j-1.2.17.jar
+[INFO] WEB-INF/web.xml already added, skipping
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/by.minsler/
+[DEBUG] adding directory META-INF/maven/by.minsler/skarnik/
+[DEBUG] adding entry META-INF/maven/by.minsler/skarnik/pom.xml
+[DEBUG] adding entry META-INF/maven/by.minsler/skarnik/pom.properties
+[INFO] 
+[INFO] <<< tomcat-maven-plugin:1.1:deploy (default-cli) @ skarnik <<<
+[INFO] 
+[INFO] --- tomcat-maven-plugin:1.1:deploy (default-cli) @ skarnik ---
+[DEBUG] org.codehaus.mojo:tomcat-maven-plugin:jar:1.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.8:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.2:test (scope managed from compile) (version managed from 3.8.1)
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.8:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.8:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.8:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-7:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.0.4:compile
+[DEBUG]    commons-codec:commons-codec:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]    org.apache.tomcat:catalina:jar:6.0.29:compile
+[DEBUG]       org.apache.tomcat:juli:jar:6.0.29:compile
+[DEBUG]       org.apache.tomcat:annotations-api:jar:6.0.29:compile
+[DEBUG]    org.apache.tomcat:catalina-ha:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:tribes:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:el-api:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:jasper:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:jasper-el:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:jasper-jdt:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:jsp-api:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:servlet-api:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:coyote:jar:6.0.29:runtime
+[DEBUG]    org.apache.tomcat:dbcp:jar:6.0.29:runtime
+[DEBUG] Created new class realm plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1
+[DEBUG] Importing foreign packages into class realm plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1
+[DEBUG]   Included: org.codehaus.mojo:tomcat-maven-plugin:jar:1.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.0.4
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.3
+[DEBUG]   Included: org.apache.tomcat:catalina:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:juli:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:annotations-api:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:catalina-ha:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:tribes:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:el-api:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:jasper:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:jasper-el:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:jasper-jdt:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:jsp-api:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:servlet-api:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:coyote:jar:6.0.29
+[DEBUG]   Included: org.apache.tomcat:dbcp:jar:6.0.29
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.8
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG]   Excluded: org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-5
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.8
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.8
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy from plugin realm ClassRealm[plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1, parent: sun.misc.Launcher$AppClassLoader@18ad9a0]
+[DEBUG] Configuring mojo 'org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy' with basic configurator -->
+[DEBUG]   (f) charset = ISO-8859-1
+[DEBUG]   (f) contextFile = /home/minsler/maven_projects/skarnik/target/skarnik/META-INF/context.xml
+[DEBUG]   (f) ignorePackaging = false
+[DEBUG]   (f) mode = war
+[DEBUG]   (f) packaging = war
+[DEBUG]   (f) path = /skarnik
+[DEBUG]   (f) update = false
+[DEBUG]   (f) url = http://localhost:8080/manager
+[DEBUG]   (f) version = 1.1
+[DEBUG]   (f) warFile = /home/minsler/maven_projects/skarnik/target/skarnik.war
+[DEBUG] -- end configuration --
+[INFO] Deploying war to http://localhost:8080/skarnik  
+[DEBUG] No server specified for authentication - using defaults
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.448s
+[INFO] Finished at: Mon Jul 23 02:18:09 FET 2012
+[INFO] Final Memory: 8M/21M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy (default-cli) on project skarnik: Cannot invoke Tomcat manager: Server returned HTTP response code: 403 for URL: http://localhost:8080/manager/deploy?path=%2Fskarnik&war= -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.codehaus.mojo:tomcat-maven-plugin:1.1:deploy (default-cli) on project skarnik: Cannot invoke Tomcat manager
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:217)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Cannot invoke Tomcat manager
+	at org.codehaus.mojo.tomcat.AbstractCatalinaMojo.execute(AbstractCatalinaMojo.java:149)
+	at org.codehaus.mojo.tomcat.AbstractWarCatalinaMojo.execute(AbstractWarCatalinaMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	... 19 more
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: http://localhost:8080/manager/deploy?path=%2Fskarnik&war=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1612)
+	at org.codehaus.mojo.tomcat.TomcatManager.invoke(TomcatManager.java:604)
+	at org.codehaus.mojo.tomcat.TomcatManager.deployImpl(TomcatManager.java:662)
+	at org.codehaus.mojo.tomcat.TomcatManager.deploy(TomcatManager.java:295)
+	at org.codehaus.mojo.tomcat.AbstractDeployWarMojo.deployWar(AbstractDeployWarMojo.java:85)
+	at org.codehaus.mojo.tomcat.AbstractDeployMojo.invokeManager(AbstractDeployMojo.java:85)
+	at org.codehaus.mojo.tomcat.AbstractCatalinaMojo.execute(AbstractCatalinaMojo.java:141)
+	... 22 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
